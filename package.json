@@ -1,21 +1,21 @@
 {
-  "name": "",
-  "description": "",
+  "name": "c9.command.pipe",
+  "description": "Simple plugin that pipes the current selection to a unix command",
   "version": "0.0.1",
   "author": "",
   "contributors": [
     {
-      "name": "",
-      "email": ""
+      "name": "Matthijs van Henten",
+      "email": "matthijs@c9.io"
     }
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mvhenten/c9.command.pipe"
   },
   "plugins": {
     "plugin": {}
   },
   "categories": ["miscellaneous"],
-  "licenses": []
+  "licenses": ["MIT"]
 }
