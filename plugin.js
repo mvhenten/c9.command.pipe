@@ -27,14 +27,17 @@ define(function(require, exports, module) {
 
             var value = session.getTextRange(range);
             var cmd = prompt("enter a command");
+            
+            if(!cmd) return;
 
-            function handleError() {
+            function handleError(err) {
                 Alert.show("Command execution failed",
                     format("Could not execute '%s'", cmd)
                 );
+                console.error(err);
             }
-
-            execFile("~/workspace/echo.js", {
+            
+            execFile("~/.c9/plugins/c9.command.pipe/exec.js", {
                 args: [cmd, value]
             }, function(err, stdout, stderr) {
                 if (err) return handleError(err);
